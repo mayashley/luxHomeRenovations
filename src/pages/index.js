@@ -13,7 +13,7 @@ import SEO from "../components/seo"
 const HomePage = () => {
   return (
     <Layout>
-      <h2>home page</h2>
+      <h2>This is my home HomePage</h2>
     </Layout>
   )
 }
