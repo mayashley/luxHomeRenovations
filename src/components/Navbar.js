@@ -20,17 +20,17 @@ const Navbar = () => {
         <ul className="nav-links">
           <li>
             <button>
-              Products
-            </button>
-          </li>
-          <li>
-            <button>
-              Developers
+              Services
             </button>
           </li>
           <li>
             <button>
               Company
+            </button>
+          </li>
+          <li>
+            <button>
+              Reno Tips
             </button>
           </li>
         </ul>
@@ -69,7 +69,7 @@ const Wrapper = styled.nav`
       border-radius: 2rem;
       border: transparent;
       color: var(--clr-white);
-      background: var(--clr-primary-5);
+      background: rgb(212,175,55);
       cursor: pointer;
       transition: var(--transition);
       &:hover {
