@@ -4,10 +4,17 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 const Hero = () => {
-  return <h2>hero component
-    <Background />
-  </h2>
-
+  return (
+    <Wrapper>
+      <Background>
+        <article>
+          <h3>We can make your house a home</h3>
+          <h1>luxurious renovations done right</h1>
+          <Link to="/projects">Projects</Link>
+        </article>
+      </Background>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`

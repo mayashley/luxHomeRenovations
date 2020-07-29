@@ -19,10 +19,12 @@ const query = graphql`
 
 
 
-const Background = () => {
+const Background = ({children}) => {
   const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
   return <Wrapper>
-    <BackgroundImage Tag="div" fluid={fluid} className='bcg'/>
+    <BackgroundImage Tag="div" fluid={fluid} className='bcg'>
+      {children}
+    </BackgroundImage>
   </Wrapper>
 }
 
@@ -37,7 +39,7 @@ const fadeIn = keyframes`
 
 const Wrapper = styled.section`
   .bcg {
-    /* MUST have a height or it wont show up right! */
+    /* MUST have a height or it wont show up! */
     min-height: 100vh;
     margin-top: -5rem;
     display: grid;
