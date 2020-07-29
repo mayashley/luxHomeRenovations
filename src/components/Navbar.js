@@ -1,20 +1,22 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import logo from "../images/logo.svg"
+import logo from "../images/lux.svg"
 import { GoThreeBars } from "react-icons/go"
 import { Link } from "gatsby"
 import NavLink from "./NavLink"
 
 const Navbar = () => {
-  return <Wrapper>
+  return(
+     <Wrapper>
     <div className="nav-center">
-      <div className="nav-Header">
+      <div className="nav-header">
         <Link to="/">
           <img src={logo} alt="design"></img>
+          </Link>
           <button className="toggle-btn">
             <GoThreeBars/>
           </button>
-        </Link>
+          </div>
         <ul className="nav-links">
           <li>
             <button>
@@ -32,9 +34,9 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-      </div>
     </div>
   </Wrapper>
+  )
 }
 
 const Wrapper = styled.nav`
@@ -111,6 +113,9 @@ const Wrapper = styled.nav`
       width: 100%;
       text-transform: capitalize;
       position: relative;
+    }
+    .logo{
+      height: 150px;
     }
   }
 `
