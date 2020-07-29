@@ -3,7 +3,25 @@ import BackgroundImage from "gatsby-background-image"
 import styled, { keyframes } from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
+// graphql query here
+const query = graphql`
+  {
+    file(relativePath: {eq: "mainBcg.png"}) {
+      childImageSharp {
+        fluid {
+         ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+
+
+
 const Background = () => {
+  const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
+  console.log(fluid)
   return <h2>background image component</h2>
 }
 
