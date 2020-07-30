@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     --clr-primary-3: hsl(21, 81%, 29%);
     --clr-primary-4: hsl(21, 77%, 34%);
     /* primary/main color */
-    --clr-primary-5: hsl(21, 62%, 45%);
+    --clr-primary-5: rgb(212,175,55);
   
     /* lighter shades of primary color */
     --clr-primary-6: hsl(21, 57%, 50%);
