@@ -23,7 +23,7 @@ export default [
   {
     id: 3,
     icon: <GiStabbedNote className="icon" />,
-    label: "history",
+    label: "Guarantee",
     text:
       "Chia pinterest locavore letterpress tote bag. Subway tile PBR&B knausgaard locavore quinoa four loko disrupt photo booth hella.",
   },

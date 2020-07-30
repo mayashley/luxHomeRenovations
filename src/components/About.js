@@ -3,8 +3,8 @@ import styled from "styled-components"
 import Title from "./Title"
 import services from "../constants/services"
 const About = () => {
-  return <Wrapper>
-    <h6>title</h6>
+  return <Wrapper className="section">
+   <Title title="About us" />
   <div className="section-center">
     {/* destructuring from services constants*/}
     {services.map(({id,icon,label,text}) =>{
